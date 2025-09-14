@@ -8,13 +8,15 @@ import { Avatar, AvatarFallback, AvatarImage } from './components/ui/avatar';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from './components/ui/dialog';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
+import tourismVideo from "./components/material/video.mp4";
+
 
 const destinations = [
   {
     id: 1,
     name: "Netarhat",
     location: "Netarhat, Jharkhand",
-    image: "https://images.unsplash.com/photo-1734883502990-c002b4e47026?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2VuaWMlMjBoaWxsJTIwc3RhdGlvbiUyMG1vdW50YWluc3xlbnwxfHx8fDE3NTc3OTI1NDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/08/9ffc869f0419cc62a4e18896dc9b388b_1000x1000.jpg",
     rating: 4.8,
     description: "Queen of Chotanagpur, known for mesmerizing sunsets and cool climate",
     category: "Hill Station",
@@ -24,7 +26,7 @@ const destinations = [
     id: 2,
     name: "Betla National Park",
     location: "Palamau, Jharkhand",
-    image: "https://images.unsplash.com/photo-1719154719122-120e6f63094c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMGZvcmVzdCUyMG5hdGlvbmFsJTIwcGFya3xlbnwxfHx8fDE3NTc3OTI1NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://live.staticflickr.com/884/40448564665_bb529f9784_b.jpg",
     rating: 4.6,
     description: "Tiger reserve with rich biodiversity and ancient Palamau Fort",
     category: "Wildlife",
@@ -34,7 +36,7 @@ const destinations = [
     id: 3,
     name: "Hundru Falls",
     location: "Ranchi, Jharkhand",
-    image: "https://images.unsplash.com/photo-1675296321708-2971a2fbd7e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxKaGFya2hhbmQlMjB3YXRlcmZhbGwlMjBuYXR1cmUlMjBzY2VuaWN8ZW58MXx8fHwxNzU3NzkyNTM2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://windows10spotlight.com/wp-content/uploads/2023/10/30d0282629f494794b3f9588c00a632e-1024x576.jpg",
     rating: 4.5,
     description: "Spectacular 320-foot waterfall surrounded by dense forests",
     category: "Waterfall",
@@ -44,7 +46,7 @@ const destinations = [
     id: 4,
     name: "Deoghar",
     location: "Deoghar, Jharkhand",
-    image: "https://images.unsplash.com/photo-1719154719122-120e6f63094c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHhKaGFya2hhbmQlMjB3YXRlcmZhbGwlMjBuYXR1cmUlMjBzY2VuaWN8ZW58MXx8fHwxNzU3NzkyNTM2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "https://www.shutterstock.com/shutterstock/photos/2333777199/display_1500/stock-photo-deoghar-jharkhand-india-march-th-baba-dham-temple-dedicated-to-lord-shiva-2333777199.jpg",
     rating: 4.7,
     description: "Sacred city with Baidyanath Temple, one of the 12 Jyotirlingas",
     category: "Religious",
@@ -122,11 +124,12 @@ function App() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-emerald-600 to-amber-600 rounded-lg flex items-center justify-center">
+            {/* <div className="w-8 h-8 bg-gradient-to-br from-emerald-600 to-amber-600 rounded-lg flex items-center justify-center">
               <Globe className="w-5 h-5 text-white" />
-            </div>
+            </div> */}
+            <img src="logo1.png"  alt="App Logo" className="w-9 h-9 rounded-lg" />
             <span className="text-xl font-bold bg-gradient-to-r from-emerald-700 to-amber-700 bg-clip-text text-transparent">
-              Jharkhand Tourism
+              Jh Tourism
             </span>
           </div>
 
@@ -194,7 +197,7 @@ function App() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1675296321708-2971a2fbd7e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxKaGFya2hhbmQlMjB3YXRlcmZhbGwlMjBuYXR1cmUlMjBzY2VuaWN8ZW58MXx8fHwxNzU3NzkyNTM2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+            src="https://pbs.twimg.com/media/ET77GGKVAAEZJxu.jpg"
             alt="Jharkhand landscape"
             className="w-full h-full object-cover"
           />
@@ -203,7 +206,7 @@ function App() {
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-emerald-200 to-amber-200 bg-clip-text text-transparent">
-            Discover Jharkhand
+            Welcome To Jharkhand
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-emerald-100">
             Experience the untouched beauty of nature, rich tribal culture, and eco-friendly adventures
